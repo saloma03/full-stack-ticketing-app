@@ -5,7 +5,7 @@
 
 <br/>
 
-### Here will be only project 2 from course.
+### Here we will develop only project 2 from course.
 
 <br/>
 
