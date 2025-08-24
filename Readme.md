@@ -134,7 +134,11 @@ baseURL should looks like:
 
     $ cd skaffold
 
+<!--
+
     $ docker login
+
+-->
 
 Need to update my docker image name webmakaka/microservices\*\*\* to your in scripts from skaffold and k8s folders.
 
@@ -247,6 +251,19 @@ $ curl \
     --data '{"title":"new concert", "price":100}' \
     --header "Content-Type: application/json" \
     --request PUT https://ticketing.dev/api/tickets/603b0e8036b9f80019154277 \
+    | python -m json.tool
+```
+
+<br/>
+
+```
+// CREATE ORDER
+$ curl \
+    --insecure \
+    --cookie /tmp/cookies.txt \
+    --data '{"ticketId":"603b0e8036b9f80019154277"}' \
+    --header "Content-Type: application/json" \
+    --request POST https://ticketing.dev/api/orders \
     | python -m json.tool
 ```
 
