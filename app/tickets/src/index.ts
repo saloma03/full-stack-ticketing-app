@@ -49,14 +49,14 @@ const start = async () => {
       useCreateIndex: true,
     });
 
-    console.log('Connected to MongoDB');
+    console.log('[Tickets] Connected to MongoDB');
   } catch (err) {
     console.log(err);
   }
 };
 
 app.listen(3000, () => {
-  console.log('Listening on port 3000');
+  console.log('[Tickets] Listening on port 3000');
 });
 
 start();
